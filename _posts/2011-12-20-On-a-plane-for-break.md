@@ -1,6 +1,7 @@
 ---
-layout: post
+layout: default
 title: On a plane for break
+subtitle: back to the frozen north
 ---
 
 Well, it's been a while.  This site hasn't seen nearly the amount of
