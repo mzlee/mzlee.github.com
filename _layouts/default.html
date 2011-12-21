@@ -1,26 +1,45 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4/01/EN"
+	  "http://www.w3.org/TR/html4/strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <title>{{ page.title }} </title>
     <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
-    <link href="css/main.css" content="text/css"></style>
-    <script src="scripts/jquery-min.js"></script>
+    <title>{{ page.title }}</title>
+    <script src="/include/jquery-min.js"></script>
+    <link  href="/include/style.css" rel="stylesheet" type="text/css"></link>
   </head>
   <body>
-    <div id="header" class="container">
-      <div id="title" >{{ page.title }}</div>
-      <div id="subtitle">{{ page.subtitle }}</div>
+    <div id="header">
+      <h1 id="title">{{ page.title }}</h1>
+      <h2 id="subtitle">{{ page.subtitle }}</h2>
       <div id="nav">
 	<ul>
+	  <li><a href="/">Blog</a></li>
+	  <li><a href="http://cs.utexas.edu/~mzlee">Research</a></li>
+	  <li><a href="#">Projects</a></li>
+	  <li><a href="#">Contact</a></li>
 	</ul>
       </div>
     </div>
-    <div id="content" class="container">
-{{ content }}
+    <div id="main">
+      <div id="posts">
+	<ul>
+	  {% for post in site.posts %}
+	  <li>
+	    <span id='{{ post.id }}'>{{ post.date | date_to_string }}</span>
+	    <a href='{{ post.url }}'>{{ post.title }}</a>
+	  </li>
+	  {% endfor %}
+	</ul>
+      </div>
+      <div id="content">
+	{{ content }}
+      </div>
     </div>
-    <div id="footer" class="container">
-      
+    <div id="footer">
+      <ul>
+	<li>About</li>
+	<li>Fork It</li>
+      </ul>
     </div>
   </body>
 </html>
-  
