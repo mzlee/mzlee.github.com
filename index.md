@@ -1,6 +1,15 @@
 ---
-layout: default
-title: blog
-subtitle: Michael Z. Lee - Computer Science PhD @ The University of Texas @ Austin
+layout: page
+title: Some guy's blog
+tagline: Systems and security in CS
 ---
-Whoops
+{% include JB/setup %}
+
+## Posts
+
+{% for post in site.posts %}
+  <div>
+    <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+	<span>{{ post.content | strip_html | truncatewords:50 }}</span>
+  </div>
+{% endfor %}
