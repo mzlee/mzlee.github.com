@@ -9,7 +9,7 @@ tagline: Systems and security in CS
 
 {% for post in site.posts %}
   <div>
-    <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-	<span>{{ post.content | strip_html | truncatewords:50 }}</span>
+    <span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a><br />
+	<span class="blurb">{{ post.content | strip_html | truncatewords:25 }}</span>
   </div>
 {% endfor %}
