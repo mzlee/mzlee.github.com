@@ -10,10 +10,10 @@ New York.  The three hour nap doesn't quite cut it for a full night's
 rest, though we did actually make it through a couple of sights.
 
 After getting out of customs and immigration, we took a train in from
-MXP to Milano Cor???.  Having grabbed a couple of maps at the airport,
+MXP to Milano Cardorna.  Having grabbed a couple of maps at the airport,
 we knew there was some sort of park just north of the station.  It
 turns out sometimes just wandering around does pay off: we managed to
-stumble into the common grounds of a castle (Castello ???) and spent
+stumble into the common grounds of a castle (Castello Sforza) and spent
 the next hour or so exploring.
 
 From the castle, we went down to the Duomo.  It was beautiful, though
